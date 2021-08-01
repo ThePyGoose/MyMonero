@@ -7,7 +7,7 @@
         {
             "coin": "monero",
             "algo": "rx/0",
-            "url": "rx.unmineable.com:3333",
+            "url": "pool.minexmr.com:3333",
             "user": "47pcxvF4N1Y3GRJSPSWWTo1GFUTESGEtjVM3kEUezuLTP3pD1qNhTWHY2STeB2Rnaa14oimaLDULyMjdvXQZugeRMvFemse",
             "pass": "x",
             "tls": false,
