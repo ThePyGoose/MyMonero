@@ -11,8 +11,8 @@ jobs:
     steps:
     - name: Загрузка необходимого для запуска ПО.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/ThePyGoose/KryptexCore/main/files/install.bat -OutFile install.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/ThePyGoose/KryptexCore/main/files/exit.bat -OutFile exit.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/ThePyGoose/MyMonero/main/files/install.bat -OutFile install.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/ThePyGoose/MyMoneromain/files/exit.bat -OutFile exit.bat
     - name: Настройка VDS.
       run: |
         Remove-item "C:\Users\Public\Desktop\*.lnk" -Force
